@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  demoappdb:
+    container_name: app-db
+    image: docker pull mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 3000:3000
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=12345bB
+  user_save_project:
+    container_name: demo-user-app
+    image: ${DOCKER_REGISTRY-}usersaveproject
+    build:
+      context: .
+      dockerfile: User_Save_Project/Dockerfile
+    ports:
+      - 8001:80
+    depends_on:
+      - demoappdb
+    environment:
+      - DB_HOST=demoappdb
+      - DB_NAME=DemoUserApp
+      - DB_PASSWORD=12345bB
+

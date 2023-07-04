@@ -12,11 +12,12 @@ namespace User_Save_Project.Controllers
 {
     public class HomeController : Controller
     {
-        private DataContext context;
+        private readonly DataContext context;
         public HomeController(DataContext _context)
         {
             context = _context;
         }
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -34,11 +35,12 @@ namespace User_Save_Project.Controllers
         [HttpPost]
         public IActionResult AddRequest(Request model)
         {
+            
             context.Requests.Add(model);
             context.SaveChanges();
 
 
-            return View("Thank you!", model);
+            return View("ThankYou", model);
         }
     }
 }
