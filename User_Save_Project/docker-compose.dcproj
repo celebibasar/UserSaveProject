@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>{92AA6260-0CB1-4A4F-97E8-76572C223C29}</ProjectGuid>
+    <ProjectGuid>{6CFCF484-6C9D-497C-9056-F473C9C909B0}</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>user_save_project</DockerServiceName>
