@@ -12,18 +12,8 @@ Bu proje, kullanıcıları bir veritabanına kaydetmek için basit bir web uygul
 
 **Teknoloji:**
 
-* Python
-* Flask
-* SQLAlchemy
-* SQLite
-
-**Kurulum:**
-
-1. Python 3 ve pip'i yükleyin.
-2. `virtualenv venv` komutunu çalıştırarak sanal bir ortam oluşturun.
-3. `venv/bin/activate` komutunu çalıştırarak sanal ortama girin.
-4. `pip install -r requirements.txt` komutunu çalıştırarak gerekli kütüphaneleri yükleyin.
-5. `flask run` komutunu çalıştırarak uygulamayı başlatın.
+* C#
+* Docker
 
 **Kullanım:**
 
